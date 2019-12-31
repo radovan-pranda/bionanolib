@@ -47,7 +47,7 @@ read_bnx <- function(file_path) {
 
             if (substr(line, 0, 1) == '#') {
                 warning("Skipping line. Invalid file format.")
-                return(NA)
+                return(list())
             }
 
             hname <- as.character(preparsed[1])
@@ -63,7 +63,7 @@ read_bnx <- function(file_path) {
 
             
             if (ignoreQuality & regexpr("(Q|q).*", definition) == TRUE) {
-                return(NA)
+                return(list())
             }
 
             new_rb_element <- list()
@@ -98,7 +98,7 @@ read_bnx <- function(file_path) {
             r[[hname]] <- new_rb_element
             return(r)
         }
-        return()
+        return(list())
     }
         
     new_rb_element <- list()
