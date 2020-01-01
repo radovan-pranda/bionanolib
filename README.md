@@ -1,17 +1,18 @@
-# bionano-lib
-Package for BioNano data manipulation.
+# bionanolib
+bionanolib is R package for BioNano data manipulation.
 
-**Currently supported formats:**
+**Supported formats:**
 * BNX
-* MAP formats - CMAP, XMAP, SMAP and MAP
-* CN
-* ERR
+* MAP, CMAP, XMAP, SMAP, INDEL - because of similarities between these formats, there is no reason to create functions specific for each format. So there is only one general function that is capable to load any file of these formats.
 * MAPRATE
+* ERR
+* CN
+* SUMMARY
 * BED
+
 
 **Supported languages:**
 * R 3.4.x
-* Python 3.x - Coming soon
 
 **Notice:** 
 If you have any problem with this package, please contact me or report it. I will try to solve it ASAP.

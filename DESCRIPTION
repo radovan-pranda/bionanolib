@@ -1,0 +1,10 @@
+Package: bionanolib
+Type: Package
+Title: R package for BioNano data manipulation.
+Version: 1.0.0
+Author: Radovan Pranda
+Maintainer: Radovan Pranda
+Description: R package for BioNano data manipulation.
+License: MIT
+Encoding: UTF-8
+LazyData: true
